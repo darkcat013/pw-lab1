@@ -10,6 +10,8 @@
     flex-direction: column;
 }
 
+/* 1 - Groceries on the go */
+
 #groceries-on-the-go {
     background-image: url(images/1-groceries-on-the-go/backgound.png);
     background-size: contain;
@@ -143,6 +145,8 @@
     word-wrap: break-word;
 }
 
+/* 2 - Locally sourced items */
+
 #locally-sourced {
     background-image: url(images/2-locally-sourced/background.png);
     background-size: cover;
@@ -198,6 +202,8 @@
     width: 65%;
     font-weight: 700;
 }
+
+/* 3 - Made simple */
 
 #made-simple {
     background-image: url(images/3-made-simple/background.png);
@@ -288,6 +294,8 @@
     gap: 80px;
 }
 
+/* 4 - FAQ */
+
 #faq {
     background-image: url(images/4-faq/background.png);
     background-size: cover;
@@ -354,23 +362,31 @@
     color: #e7d5c5;
     font-weight: 400;
 }
+
+/* responsive */
+
 @media only screen and (max-width: 540px) {
-    #groceries-top-fruit{
-        display: block !important;
+    #groceries-text {
+        margin-top: 60px;
     }
-    #groceries-top-and-bottom-fruit {
-        justify-content: space-between !important;
-    }
-    #toolbar {
-        margin-top: 10px;
-    }
-    .toolbar-part {
-        flex-direction: column;
-    }
-    #groceries-phone {
+    #groceries-vertical-text {
         display: none;
     }
-    #groceries-left-strawberry {
+    #groceries-top-and-bottom-fruit {
+        display: none;
+    }
+    #toolbar {
+        margin-top: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:10px;
+    }
+    .toolbar-part{
+        flex-direction: column;
+        width: 100%;
+    }
+    #groceries-phone {
         display: none;
     }
     .made-simple-option-item-img {
